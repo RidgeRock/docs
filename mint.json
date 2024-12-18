@@ -30,11 +30,11 @@
       "name": "Guides",
       "url": "api-reference"
     },
-        {
+    {
       "name": "APIs & SDKs",
       "url": "api-reference"
     },
-        {
+    {
       "name": "Changelog",
       "url": "api-reference"
     }
@@ -61,7 +61,7 @@
       "group": "Overview",
       "pages": [
         "introduction",
-        "why-mutable-web",
+        "why-mutable-web"
       ]
     },
     {
