@@ -1,59 +1,75 @@
 ---
-title: 'Images and Embeds'
-description: 'Add image, video, and other HTML elements'
-icon: 'image'
+title: "Key Components"
+description: "The Mutable Web is built on a set of foundational components that work together to redefine how we interact with digital content. Each component plays a critical role in enabling customization, integration, and collaboration, making the web more dynamic, user-centric, and adaptable. Let’s explore these key components:"
+icon: "image"
 ---
 
-<img
-  style={{ borderRadius: '0.5rem' }}
-  src="https://mintlify-assets.b-cdn.net/bigbend.jpg"
-/>
+## Insertion Points
 
-## Image
+Insertion points are predefined locations within a web page where modifications can be applied. They serve as the anchors for integrating new functionalities, tools, or visual enhancements without disrupting the underlying website’s structure.
 
-### Using Markdown
+### Why they matter
 
-The [markdown syntax](https://www.markdownguide.org/basic-syntax/#images) lets you add images using the following code
+* **Precision**: Target specific areas of a webpage for modification.
 
-```md
-![title](/path/image.jpg)
-```
+* **Flexibility**: Enable seamless integration of widgets or applications.
 
-Note that the image file size must be less than 5MB. Otherwise, we recommend hosting on a service like [Cloudinary](https://cloudinary.com/) or [S3](https://aws.amazon.com/s3/). You can then use that URL and embed.
+* **Non-Intrusive**: Maintain the integrity of the original web content while enhancing its usability.
 
-### Using Embeds
+By using insertion points, developers and users can create impactful changes that blend naturally into the web experience.
 
-To get more customizability with images, you can also use [embeds](/writing-content/embed) to add images
+## Widgets
 
-```html
-<img height="200" src="/path/image.jpg" />
-```
+Widgets are modular, self-contained units of functionality that can be added to web pages. From displaying real-time data to introducing interactive tools, widgets provide users with the ability to extend the capabilities of any website.
 
-## Embeds and HTML elements
+### Examples of Widgets
 
-<iframe
-  width="560"
-  height="315"
-  src="https://www.youtube.com/embed/4KzFe50RQkQ"
-  title="YouTube video player"
-  frameBorder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-  allowFullScreen
-  style={{ width: '100%', borderRadius: '0.5rem' }}
-></iframe>
+* **Content Enhancers**: Add translations, summaries, or annotations to web pages.
 
-<br />
+* **Interactive Tools**: Embed calculators, polls, or form-fillers.
 
-<Tip>
+* **Visual Overlays**: Customize themes or layouts with new design elements.
 
-Mintlify supports [HTML tags in Markdown](https://www.markdownguide.org/basic-syntax/#html). This is helpful if you prefer HTML tags to Markdown syntax, and lets you create documentation with infinite flexibility.
+Widgets empower users to personalize their online experience while offering developers an opportunity to innovate within an open ecosystem.
 
-</Tip>
+## Controllers
 
-### iFrames
+Controllers act as the bridge between widgets and the underlying web content. They manage how widgets interact with the page and ensure that modifications align with user preferences.
 
-Loads another HTML page within the document. Most commonly used for embedding videos.
+### Key Functions
 
-```html
-<iframe src="https://www.youtube.com/embed/4KzFe50RQkQ"> </iframe>
-```
+* **Orchestration**: Coordinate the behavior of multiple widgets to create a cohesive experience.
+
+* **Customization**: Allow users to fine-tune widget settings and interactions.
+
+* **Consistency**: Ensure a smooth and reliable experience across different websites.
+
+Controllers simplify the process of managing complex web interactions, making advanced customization accessible to everyone.
+
+## Applications
+
+Applications in the Mutable Web are collections of widgets and controllers designed to work in harmony. They provide a comprehensive set of tools and functionalities tailored to specific use cases or user needs.
+
+### Examples
+
+* **Productivity Suites**: Integrate task management, note-taking, and calendar tools into your favorite platforms.
+
+* **E-Commerce Enhancements**: Add price comparison, coupon finders, or product reviews directly to online shopping pages.
+
+* **Accessibility Solutions**: Implement tools for screen readers, high-contrast modes, or text resizing.
+
+Applications offer an end-to-end solution for creating highly customized and feature-rich web experiences.
+
+## Why these components matter
+
+The interplay of insertion points, widgets, controllers, and applications creates a powerful ecosystem that:
+
+* **Empowers Users**: Take control of your web experience with tools and features that match your needs.
+
+* **Inspires Developers**: Build innovative solutions that integrate seamlessly with any website.
+
+* **Drives Collaboration**: Foster a community-driven approach to web customization and improvement.
+
+These components are the foundation of the Mutable Web’s mission to transform the internet into a dynamic, adaptive, and user-first environment.
+
+The Mutable Web is more than a set of tools—it’s a new way to experience the internet. By understanding and leveraging its key components, you can unlock endless possibilities for customization, innovation, and collaboration.
