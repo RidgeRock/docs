@@ -11,8 +11,8 @@
     "light": "#384BFF",
     "dark": "#384BFF",
     "anchors": {
-      "from": "#0D9373",
-      "to": "#07C983"
+      "from": "#384BFF",
+      "to": "#384BFF"
     }
   },
   "topbarLinks": [
@@ -33,18 +33,18 @@
   ],
   "anchors": [
     {
-      "name": "Documentation",
-      "icon": "book-open-cover",
+      "name": "Github",
+      "icon": "github",
       "url": "https://mintlify.com/docs"
     },
     {
       "name": "Community",
-      "icon": "slack",
+      "icon": "x-twitter",
       "url": "https://mintlify.com/community"
     },
     {
-      "name": "Blog",
-      "icon": "newspaper",
+      "name": "Telegram",
+      "icon": "telegram",
       "url": "https://mintlify.com/blog"
     }
   ],
