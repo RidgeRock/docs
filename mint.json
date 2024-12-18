@@ -50,15 +50,14 @@
   ],
   "navigation": [
     {
-      "group": "Get Started",
+      "group": "Overview",
       "pages": [
         "introduction",
-        "quickstart",
-        "development"
+        "why-mutable-web",
       ]
     },
     {
-      "group": "Essentials",
+      "group": "Structure",
       "pages": [
         "essentials/markdown",
         "essentials/code",
@@ -69,17 +68,11 @@
       ]
     },
     {
-      "group": "API Documentation",
+      "group": "Products",
       "pages": [
-        "api-reference/introduction"
-      ]
-    },
-    {
-      "group": "Endpoint Examples",
-      "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
+        "linked-accounts",
+        "universal-guide",
+        "ai-crawler"
       ]
     }
   ],
