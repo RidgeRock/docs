@@ -75,9 +75,9 @@
     {
       "group": "Products",
       "pages": [
-        "linked-accounts",
-        "universal-guide",
-        "ai-crawler"
+        "products/linked-accounts",
+        "products/universal-guide",
+        "products/ai-crawler"
       ]
     }
   ],
