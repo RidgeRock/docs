@@ -22,8 +22,8 @@
     }
   ],
   "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "name": "Get our extension",
+    "url": "https://chromewebstore.google.com/detail/mutable-web/cnahdmdbhkphpbpbjjbfdnmbphbenglc"
   },
   "tabs": [
     {
@@ -38,7 +38,7 @@
       "url": "https://mintlify.com/docs"
     },
     {
-      "name": "Community",
+      "name": "Twitter",
       "icon": "x-twitter",
       "url": "https://mintlify.com/community"
     },
