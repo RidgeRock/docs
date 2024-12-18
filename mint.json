@@ -61,14 +61,14 @@
   },
   "navigation": [
     {
-      "group": "Overview",
+      "group": "OVERVIEW",
       "pages": [
         "introduction",
         "why-mutable-web"
       ]
     },
     {
-      "group": "Structure",
+      "group": "STRUCTURE",
       "pages": [
         "structure/semantic-context",
         "structure/key-components",
@@ -76,7 +76,7 @@
       ]
     },
     {
-      "group": "Products",
+      "group": "PRODUCTS",
       "pages": [
         "products/linked-accounts",
         "products/universal-guide",
