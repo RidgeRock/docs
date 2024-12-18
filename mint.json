@@ -28,7 +28,7 @@
   "tabs": [
     {
       "name": "Guides",
-      "url": "api-reference"
+      "url": "guides"
     },
     {
       "name": "APIs & SDKs",
@@ -36,7 +36,7 @@
     },
     {
       "name": "Changelog",
-      "url": "api-reference"
+      "url": "changelog"
     }
   ],
   "anchors": [
