@@ -1,15 +1,15 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
+  "name": "Mutable Web",
   "logo": {
     "dark": "/logo/dark.svg",
     "light": "/logo/light.svg"
   },
   "favicon": "/favicon.svg",
   "colors": {
-    "primary": "#0D9373",
-    "light": "#07C983",
-    "dark": "#0D9373",
+    "primary": "#384BFF",
+    "light": "#384BFF",
+    "dark": "#384BFF",
     "anchors": {
       "from": "#0D9373",
       "to": "#07C983"
