@@ -27,7 +27,15 @@
   },
   "tabs": [
     {
-      "name": "API Reference",
+      "name": "Guides",
+      "url": "api-reference"
+    },
+        {
+      "name": "APIs & SDKs",
+      "url": "api-reference"
+    },
+        {
+      "name": "Changelog",
       "url": "api-reference"
     }
   ],
