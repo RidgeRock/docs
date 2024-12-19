@@ -1,0 +1,46 @@
+---
+title: "Picker"
+description: "Picker — a tool that allows users to select a contextual area on a web page in order to perform actions on it or extract useful data. This tool is provided by the platform for application developers, who define how and for what purposes the Picker will be used."
+---
+
+## Picker Example
+
+To try out the Picker in action, you can use the Picker Example application.
+
+How to run **Mutable Web** applications is described [here](https://dapplets.mintlify.app/introduction).
+
+## Picker mode
+
+In the right sidebar, in the central area among the action buttons, select **Run Picker**. Once clicked, the Picker mode will be activated. By moving the cursor around the screen, you can observe context highlighting. The contexts are defined in parser configs that have already been added to our ecosystem.
+
+<img height="1080" width="1920" alt="Highlighted contexts" src="https://docs.apps.dapplets.org/assets/images/docs-picker-02-4dbc83c2d37727888d0e1f1576b51290.png" />
+
+## Highlighted contexts[​](https://docs.apps.dapplets.org/docs/features/picker#highlighted-contexts "Direct link to Highlighted contexts")
+
+You can see highlights for contexts such as user profiles, post feeds, individual posts, avatars in posts, custom post buttons, and more.
+
+You may also notice highlights on elements of the Mutable Web extension’s sidebar or top panel, as well as on widgets embedded in contexts, such as the **Tipping** application widget.
+
+<img height="1080" width="1920" alt="Select Tipping button" src="https://docs.apps.dapplets.org/assets/images/docs-picker-03-57429be91d2e74e201196d7c00d88715.png" />
+
+## Interaction with the contexts[​](https://docs.apps.dapplets.org/docs/features/picker#interaction-with-the-contexts "Direct link to Interaction with the contexts")
+
+If a context is not only highlighted but also filled, with a lightning icon in the center, clicking on it will open a popup with information about this context.
+
+<img height="1080" width="1920" alt="Informational popup" src="https://docs.apps.dapplets.org/assets/images/docs-picker-04-434ac6a60bbe3a0ae8b6e5d03abc1d34.png" />
+
+## Latch[​](https://docs.apps.dapplets.org/docs/features/picker#latch "Direct link to Latch")
+
+If there is a button with plus icon or a double lightning icon next to the highlight, the informational popup will open by clicking on it. We call them **Latch** buttons. This way, interaction with the context itself is not restricted.
+
+<img height="1080" width="1920" alt="Context action button" src="https://docs.apps.dapplets.org/assets/images/docs-picker-05-3b2ef4b74977080a25d930f3163fe92f.png" />
+
+## Exit Picker mode[​](https://docs.apps.dapplets.org/docs/features/picker#exit-picker-mode "Direct link to Exit Picker mode")
+
+To exit Picker mode, click the Close button at the top right of the popup, or click the **Run Picker** button in the sidebar again.
+
+## API[​](https://docs.apps.dapplets.org/docs/features/picker#api "Direct link to API")
+
+* [`DappletContextPicker`](https://docs.apps.dapplets.org/docs/api/dapplet-context-picker)
+
+* [`Highlighter`](https://docs.apps.dapplets.org/docs/api/highlighter)
