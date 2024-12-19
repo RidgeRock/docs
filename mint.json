@@ -83,6 +83,12 @@
         "products/universal-guide",
         "products/ai-crawler"
       ]
+    },
+    {
+      "group": "API",
+      "pages": [
+        "api-references/dapplet-context-picker"
+      ]
     }
   ],
   "footerSocials": {
