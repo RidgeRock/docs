@@ -13,7 +13,8 @@
     "anchors": {
       "from": "#384BFF",
       "to": "#384BFF"
-    },
+    }
+  },
   "topbarLinks": [
     {
       "name": "Support",
@@ -24,20 +25,20 @@
     "name": "Get our extension",
     "url": "https://chromewebstore.google.com/detail/mutable-web/cnahdmdbhkphpbpbjjbfdnmbphbenglc"
   },
-"tabs": [
+  "tabs": [
     {
-        "name": "API References",
-        "url": "api-references"
+      "name": "API References",
+      "url": "api-references"
     },
     {
-        "name": "Guides",
-        "url": "guides"
+      "name": "Guides",
+      "url": "guides"
     },
     {
-        "name": "Blog",
-        "url": "https://your-website.com/blog"
+      "name": "Blog",
+      "url": "https://your-website.com/blog"
     }
-],
+  ],
   "anchors": [
     {
       "name": "Github",
