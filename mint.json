@@ -85,9 +85,15 @@
       ]
     },
     {
-      "group": "API",
+      "group": "API References",
       "pages": [
         "api-references/dapplet-context-picker"
+      ]
+    },
+    {
+      "group": "Guides",
+      "pages": [
+        "guides/what-is-apps"
       ]
     }
   ],
