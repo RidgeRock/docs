@@ -79,6 +79,7 @@
     {
       "group": "PRODUCTS",
       "pages": [
+        "products/picker-tool"
         "products/linked-accounts",
         "products/universal-guide",
         "products/ai-crawler"
