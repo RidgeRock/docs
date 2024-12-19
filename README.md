@@ -1,32 +1,41 @@
-# Mintlify Starter Kit
+# Documentation for Dapplet Platform
 
-Click on `Use this template` to copy the Mintlify starter kit. The starter kit contains examples including
+[](https://github.com/dapplets/dapplet-docs/blob/master/README.md#documentation-for-dapplet-platform)
 
-- Guide pages
-- Navigation
-- Customizations
-- API Reference pages
-- Use of popular components
+Documentation for the Dapplet Platform. Includes instructions for using the [Dapplet Browser Extension](https://github.com/dapplets/dapplet-extension), [exercises](https://github.com/dapplets/dapplet-template) for creating dapplets and adapters for the platform, and documentation for community-created adapters.
 
-### Development
+View at [dapplets.mintlify.app](https://dapplets.mintlify.app)
 
-Install the [Mintlify CLI](https://www.npmjs.com/package/mintlify) to preview the documentation changes locally. To install, use the following command
+## Node Version
 
-```
-npm i -g mintlify
-```
+[](https://github.com/dapplets/dapplet-docs/blob/master/README.md#node-version)
 
-Run the following command at the root of your documentation (where mint.json is)
+You must use **node 14** or above. We recommend [nvm](https://github.com/nvm-sh/nvm).
 
-```
-mintlify dev
-```
+## Installation
 
-### Publishing Changes
+`yarn install`
 
-Install our Github App to auto propagate changes from your repo to your deployment. Changes will be deployed to production automatically after pushing to the default branch. Find the link to install on your dashboard. 
+## Local Development
 
-#### Troubleshooting
+[](https://github.com/dapplets/dapplet-docs/blob/master/README.md#local-development)
 
-- Mintlify dev isn't running - Run `mintlify install` it'll re-install dependencies.
-- Page loads as a 404 - Make sure you are running in a folder with `mint.json`
+`yarn start`
+
+This command starts a local development server and open up a browser window. Most changes are reflected live without having to restart the server.
+
+## Build
+
+[](https://github.com/dapplets/dapplet-docs/blob/master/README.md#build)
+
+`yarn build`
+
+This command generates static content into the `build` directory and can be served using any static contents hosting service.
+
+## Deployment
+
+[](https://github.com/dapplets/dapplet-docs/blob/master/README.md#deployment)
+
+`GIT_USER=<Your GitHub username> USE_SSH=true yarn deploy`
+
+If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
