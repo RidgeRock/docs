@@ -25,20 +25,12 @@
     "name": "Get our extension",
     "url": "https://chromewebstore.google.com/detail/mutable-web/cnahdmdbhkphpbpbjjbfdnmbphbenglc"
   },
-"tabs": [
+  "tabs": [
     {
-        "name": "API References",
-        "url": "api-references"
-    },
-    {
-        "name": "Guides",
-        "url": "guides"
-    },
-    {
-        "name": "Blog",
-        "url": "https://your-website.com/blog"
+      "name": "API Reference",
+      "url": "api-reference"
     }
-],
+  ],
   "anchors": [
     {
       "name": "Github",
