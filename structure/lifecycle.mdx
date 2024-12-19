@@ -1,0 +1,76 @@
+---
+title: "Universal LifeCycle"
+description: "In the Mutable Web, every interaction with applications, mutations, and objects follows a consistent workflow, ensuring a seamless and efficient user experience. This universal lifecycle comprises three key stages: Local Change, Publish, and Pull Request."
+---
+
+## Semantic Context
+
+Mutable Web introduces a structure where each object, whether it's a mutation or a document, has its lifecycle that involves local edits and potential publication.
+
+The process follows a common pattern for all applications, mutations, or objects:
+
+`LocalChange => Publish (as Fork, as Update) => Pull Request`
+
+## Key Stages of the Lifecycle
+
+### **1. Local Change**
+
+When a user initiates an interaction, such as creating or editing an object, the change occurs locally within their environment. This allows for multiple edits before deciding to make the changes public. Objects during this stage can have varying visibility settings:
+
+* **`Private`**: Accessible only by ID; does not appear in search results or public lists.
+
+* **`Devel`**: Visible only in developer mode, facilitating development without full public exposure.
+
+* **`Public`**: Fully visible and searchable by others.
+
+### **2. Publish (as Fork or Update)**
+
+Once satisfied with the local changes, the user can publish the object. If the object is originally authored by someone else, the user must **fork** it, creating a new version branching from the original. For objects the user owns, they can publish changes as an **update**, generating a new version without forking. The publish function adapts contextually, offering options to notify the original author, akin to a pull request.
+
+The Publish button is context-sensitive, meaning it will change its function depending on whether the object is a fork or an update. A checkbox labeled **`notify origin`** allows the user to notify the original author if desired.
+
+<Accordion title="Example of Forking​" defaultOpen={false}>
+  * **Forking a Foreign Mutation**: The user forks another author’s mutation, makes changes, and publishes it under their name.
+
+  * **Forking Your Own Mutation**: The user can fork their mutation for branching out new versions (e.g., for testing versus production).
+</Accordion>
+
+### Creating a Mutation from Scratch[​](https://docs.apps.dapplets.org/docs/universal-life-cycle-in-mutable-web/#creating-a-mutation-from-scratch "Direct link to Creating a Mutation from Scratch")
+
+A user can create a new mutation without forking from an existing one. In this case, the mutation will start with a null ID and will generate an ID once published.
+
+### **3. Pull Request**
+
+Integrated into the publish action, the pull request mechanism allows users to propose changes to the original author. By selecting the `notify origin` option during publishing, the original author is alerted to the proposed modifications, facilitating collaboration and iterative improvement.
+
+This structured lifecycle ensures that all interactions within the Mutable Web are managed systematically, promoting a collaborative and user-centric web environment.
+
+## Special Cases in the LifeCycle[​](https://docs.apps.dapplets.org/docs/universal-life-cycle-in-mutable-web/#special-cases-in-the-lifecycle "Direct link to Special Cases in the LifeCycle")
+
+### Editing Your Own Mutation Without an Origin[​](https://docs.apps.dapplets.org/docs/universal-life-cycle-in-mutable-web/#editing-your-own-mutation-without-an-origin "Direct link to Editing Your Own Mutation Without an Origin")
+
+When editing a mutation with no origin (no fork from another mutation), the changes are treated as updates. There is no need to create a local copy, and the ID remains the same as the original.
+
+### Editing a Mutation with an Origin (Foreign Author)[​](https://docs.apps.dapplets.org/docs/universal-life-cycle-in-mutable-web/#editing-a-mutation-with-an-origin-foreign-author "Direct link to Editing a Mutation with an Origin (Foreign Author)")
+
+If a mutation is based on another author’s work (forked mutation), changes are still local until published. However, the origin metadata is preserved, and a **Publish as Fork** operation is required to keep the forked history intact.
+
+### Publishing a Fork[​](https://docs.apps.dapplets.org/docs/universal-life-cycle-in-mutable-web/#publishing-a-fork "Direct link to Publishing a Fork")
+
+When publishing a fork, Mutable Web ensures that the original mutation is not altered. The new fork has its own unique ID and can be edited, published, and even forked by others in turn.
+
+### Fork and Edit Lifecycle[​](https://docs.apps.dapplets.org/docs/universal-life-cycle-in-mutable-web/#fork-and-edit-lifecycle "Direct link to Fork and Edit Lifecycle")
+
+Each mutation can follow a different path depending on its origin:
+
+1. *Forking Someone Else’s Mutation*:
+
+2. *Forking Your Own Mutation*:
+
+3. *Creating a Mutation from Scratch*:
+
+4. *Editing Your Own Mutation (No Origin)*:
+
+5. *Editing Your Own Mutation (With Origin)*:
+
+By following these workflows, Mutable Web maintains a streamlined process for creating, editing, and managing mutations, ensuring both flexibility and control for developers and users alike.
