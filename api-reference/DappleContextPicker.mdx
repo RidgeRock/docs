@@ -9,4 +9,19 @@ description: 'DappletContextPicker is a component that enables context picking m
   For examples and details on the usage of this React components, visit the [feature demo page](https://docs.apps.dapplets.org/docs/features/picker).
 </Tip>
 
+## Basic usecase[​](https://docs.apps.dapplets.org/docs/api/dapplet-context-picker#basic-usecase "Direct link to Basic usecase")
+
+You don't need to import the component. It's available in the NEAR Components through the Layout Managers.
+
+`<DappletContextPicker onClick={onClick} LatchComponent={LatchComponent} />`
+
+
+## Props
+
+| Name                 | Type                                                                                                                         | Optional | Description                                                                                                                                                                         |
+| -------------------- | ---------------------------------------------------------------------------------------------------------------------------- | -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`target`**         | [`Target`](https://docs.apps.dapplets.org/docs/api/target) or [`Target`](https://docs.apps.dapplets.org/docs/api/target)`[]` | ✔️       | The set of target contexts that will be highlighted and available for selection. By default, all contexts on the page provided by the available adapters will be active for Picker. |
+| **`onClick`**        | `(ctx: `[`TransferableContext`](https://docs.apps.dapplets.org/docs/api/transferable-context)`) => void`                     | ✔️       | A callback that will be called when the context is clicked.                                                                                                                         |
+| **`LatchComponent`** | `React.FC<`[`LatchProps`](https://docs.apps.dapplets.org/docs/api/latch-props)`>`                                            | ✔️       | Adding a Latch component. Contexts with Latch become interactive. `onClick` is called when the Latch is clicked.                                                                    |
+
 ##
