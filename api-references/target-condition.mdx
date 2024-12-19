@@ -1,5 +1,6 @@
 ---
 title: "TargetCondition"
+mode: "wide"
 ---
 
 | Name           | Type         | Optional | Description                                   |
@@ -7,6 +8,6 @@ title: "TargetCondition"
 | **`not`**      | `ScalarType` | ✔️       | Excludes specific contexts by type.           |
 | **`eq`**       | `ScalarType` | ✔️       | Specifies contexts by exact type.             |
 | **`contains`** | string       | ✔️       | Specifies contexts that contain a substring.  |
-| **`in`**       | `ScalarType` | ✔️       | Specifies contexts by types.                  |
+| **`in`**       | `ScalarType[]` | ✔️       | Specifies contexts by types.                  |
 | **`index`**    | boolean      | ✔️       | Specifies the context by exact index.         |
 | **`endsWith`** | string       | ✔️       | Specifies contexts that end with a substring. |
