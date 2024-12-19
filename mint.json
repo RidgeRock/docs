@@ -85,15 +85,20 @@
       ]
     },
     {
-      "group": "API REFERENCES",
+      "group": "GUIDES",
       "pages": [
-        "api-references/dapplet-context-picker"
+        "guides/what-is-apps",
+        "guides/onboarding",
+        "guides/documentapp",
+        "guides/linkdb",
+        "guides/webguide",
+        "guides/test-callouts"
       ]
     },
     {
-      "group": "GUIDES",
+      "group": "API REFERENCES",
       "pages": [
-        "guides/what-is-apps"
+        "api-references/dapplet-context-picker"
       ]
     },
     {
