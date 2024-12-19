@@ -92,7 +92,9 @@
         "guides/documentapp",
         "guides/linkdb",
         "guides/webguide",
-        "guides/test-callouts"
+        "guides/test-callouts",
+        "guides/mutation-schema",
+        "guides/parser"
       ]
     },
     {
