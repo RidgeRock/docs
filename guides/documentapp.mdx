@@ -1,0 +1,30 @@
+---
+title: "Document App"
+description: "A simple example of configuring an app for document handling."
+---
+
+```javascript
+{
+  "metadata": {
+    "name": "Document App Example"
+  },
+  "controller": "${REPL_ACCOUNT}/widget/DocumentExample.Main",
+  "$targets": [
+    {
+      "namespace": "${REPL_ACCOUNT}/parser/twitter",
+      "contextType": "root"
+    }
+  ],
+  "$permissions": {
+    "documents": true
+  }
+}
+```
+
+Explanation
+
+* `controller:` The main component that controls the app’s functionality.
+
+* `$targets:` Specifies that the app will be injected into the root of Twitter.
+
+* `$permissions:` Grants permission to work with documents.

@@ -1,0 +1,33 @@
+---
+title: "Link DB"
+description: "This example shows the configuration of an app for storing and retrieving data linked to specific context (e.g., a Twitter post)."
+---
+
+```javascript
+{
+  "metadata": {
+    "name": "Link DB Example",
+    "description": "Store and retrieve context-linked data in the Link DB"
+  },
+  "$targets": [
+    {
+      "namespace": "${REPL_ACCOUNT}/parser/twitter",
+      "contextType": "post",
+      "if": { "id": { "not": null } },
+      "injectTo": "southPanel",
+      "componentId": "${REPL_ACCOUNT}/widget/LinkDbExample.Main",
+      "static": true
+    }
+  ]
+}
+```
+
+Explanation
+
+* `metadata:` Includes the name and description, explaining that the app stores and retrieves data.
+
+* `$targets:` Specifies that the app will display within a Twitter post.
+
+* `injectTo` defines that the component will be placed in the south panel.
+
+* `static` indicates that the component is static and does not change dynamically.

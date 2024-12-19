@@ -1,0 +1,36 @@
+---
+title: "Web Guide App"
+description: "A web guide example that can be displayed on any website."
+---
+
+```javascript
+{
+  "metadata": {
+    "name": "Web Guide",
+    "image": {
+      "ipfs_cid": "bafkreihwu5plfrt7ndwsodrnjsjlkqbx3lqfua7sbfpcdfagz5kjpwj55y"
+    }
+  },
+  "controller": "${REPL_ACCOUNT}/widget/WebGuide.Main",
+  "$targets": [
+    {
+      "namespace": "engine",
+      "contextType": "website"
+    }
+  ],
+  "$parsers": "any",
+  "$permissions": {
+    "documents": true
+  }
+}
+```
+
+Explanation
+
+* `controller:` The main component responsible for the web guide’s functionality.
+
+* `$targets:` Specifies that the web guide will be injected on any website.
+
+* `$parsers:` Indicates that it can work with any type of data.
+
+* `$permissions:` Allows access to documents, necessary for the web guide’s functionality.

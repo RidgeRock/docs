@@ -1,0 +1,29 @@
+---
+title: "Test Callouts"
+description: "for Web Guide and Onboarding. This example shows callouts for the onboarding and web guide apps. Callouts appear after the text in a Twitter post."
+---
+
+```
+{
+  "metadata": {
+    "name": "Test Callouts"
+  },
+  "$targets": [
+    {
+      "namespace": "${REPL_ACCOUNT}/parser/twitter",
+      "contextType": "post",
+      "if": { "id": { "not": null, "index": true } },
+      "injectTo": "afterText",
+      "componentId": "${REPL_ACCOUNT}/widget/Onboarding.Callout"
+    }
+  ]
+}
+```
+
+### Explanation[​](https://docs.apps.dapplets.org/docs/examples/examples-of-app-configurations#explanation-1 "Direct link to Explanation")
+
+* `$targets:` Configured so that the callout component is added to a Twitter post if an id exists.
+
+* `injectTo` defines that the callout will appear immediately after the text.
+
+* `componentId `specifies the main component for displaying the callout.
