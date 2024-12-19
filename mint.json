@@ -100,7 +100,13 @@
     {
       "group": "API REFERENCES",
       "pages": [
-        "api-references/dapplet-context-picker"
+        "api-references/dapplet-context-picker",
+        "api-references/highlighter",
+        "api-references/injectable-target",
+        "api-references/latch-props",
+        "api-references/target-condition",
+        "api-references/target",
+        "api-references/transferable-context"
       ]
     },
     {
