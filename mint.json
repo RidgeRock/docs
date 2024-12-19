@@ -35,8 +35,8 @@
       "url": "guides"
     },
     {
-      "name": "Blog",
-      "url": "https://your-website.com/blog"
+      "name": "Changelog",
+      "url": "changelog"
     }
   ],
   "anchors": [
@@ -85,15 +85,21 @@
       ]
     },
     {
-      "group": "API References",
+      "group": "API REFERENCES",
       "pages": [
         "api-references/dapplet-context-picker"
       ]
     },
     {
-      "group": "Guides",
+      "group": "GUIDES",
       "pages": [
         "guides/what-is-apps"
+      ]
+    },
+    {
+      "group": "CHANGELOG",
+      "pages": [
+        "changelog/2024"
       ]
     }
   ],
