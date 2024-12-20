@@ -80,7 +80,7 @@
       "group": "PRODUCTS",
       "pages": [
         "products/picker-tool",
-        "products/linked-accounts",
+        "products/ca",
         "products/webguide",
         "products/ai-crawler"
       ]
