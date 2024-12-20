@@ -3,6 +3,10 @@ title: "Key Components"
 description: "The Mutable Web is built on a set of foundational components that work together to redefine how we interact with digital content. Each component plays a critical role in enabling customization, integration, and collaboration, making the web more dynamic, user-centric, and adaptable. Let’s explore these key components:"
 ---
 
+<img alt="Keycomps Hero Light" class="block dark:hidden" src="/images/keycomps-light.png" />
+
+<img alt="Keycomps Hero Dark" class="hidden dark:block" src="/images/keycomps-dark.png" />
+
 ## Insertion Points
 
 Insertion points are predefined locations within a web page where modifications can be applied. They serve as the anchors for integrating new functionalities, tools, or visual enhancements without disrupting the underlying website’s structure.
@@ -65,88 +69,50 @@ interface WidgetProps {
 <Accordion title="Properties" defaultOpen={false}>
   `context: TransferableContext` Represents the current context in which the widget is operating. It is an instance of `TransferableContext`, allowing the widget to access relevant data and functionality within its operational scope.
 
-
-
   `link:` An optional object containing link information.
-
-
 
   `id:` A static link ID, represented as UserLinkId.
 
-
-
   `authorId:` The ID of the author associated with the link.
-
-
 
   `notify:` A function used to trigger notifications or modals within the platform. It takes `modalProps` as a parameter, which contains properties for the modal to be displayed.
 
-
-
   `query:` A function that allows the widget to perform queries against the specified target. It returns a `TransferableContext` or null if the query fails.
-
-
 
   `linkDb: `An object containing methods for interacting with the link database.
 
-
-
   `get:`  `Parameters:`  `ctx: TransferableContext:` The current context.
 
-
-
   `accountIds?: `	`string[] | string:` An optional parameter to specify account IDs.
-
-
 
   `indexRules?:`	`LinkIndexRules:` An optional parameter for indexing rules.&#x20;
 
   `Returns:` A promise that resolves to `LinkedDataByAccountDto`, containing linked data by account.
 
-
-
   `set: Parameters:` `ctx: TransferableContext:` The current context.
 
-
-
   `dataByAccount:` `LinkedDataByAccountDto:` The data to be set.
-
-
 
   `indexRules: LinkIndexRules:` The indexing rules to apply.
 
   `Returns:` A promise that resolves when the data has been set.
 
-
-
   `commitDocument:`	A function to commit a document to the platform.
   Parameters: `appDocId:` `DocumentId:` The ID of the document to commit.
 
-
-
   `appDocMeta:` `DocumentMetadata:` Metadata associated with the document.
 
-
-
   `ctx:` `TransferableContext:` The current context.
-
-
 
   `dataByAccount:` `LinkedDataByAccountDto:` The linked data to associate with the document.
 
   `Returns:` A promise that resolves when the document has been committed.
 
-
-
   `getDocument:`	A function that retrieves the current document associated with the widget. It returns a promise that resolves to a `DocumentDto` or `null` if no document is found.
-
-
 
   **Conclusion**
 
   The `WidgetProps` interface plays a crucial role in facilitating the interaction between the BOS component and the platform. By defining a clear structure for the properties and methods, it ensures that widgets can efficiently manage context, links, notifications, and document interactions.
-
-
 
   For further information or examples of usage, please refer to the relevant sections in the documentation or contact the development team.
 </Accordion>
