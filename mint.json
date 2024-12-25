@@ -113,7 +113,8 @@
     {
       "group": "CHANGELOG",
       "pages": [
-        "changelog/2024"
+        "changelog/2024",
+        "changelog/2023"
       ]
     }
   ],
