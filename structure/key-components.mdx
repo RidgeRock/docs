@@ -9,37 +9,41 @@ description: "The Mutable Web is built on a set of foundational components that 
 
 ## Insertion Points
 
-Insertion points are predefined locations within a web page where modifications can be applied. They serve as the anchors for integrating new functionalities, tools, or visual enhancements without disrupting the underlying website’s structure.
+**Insertion Points** are predefined locations within a web page where modifications can be applied. They serve as anchors for integrating new functionalities, tools, or visual enhancements without disrupting the underlying website’s structure.
 
-* **Precision**: Target specific areas of a webpage for modification.
+* **Precision:** Target specific areas of a webpage for modification.
 
-* **Flexibility**: Enable seamless integration of widgets or applications.
+* **Flexibility:** Enable seamless integration of widgets or applications.
 
-* **Non-Intrusive**: Maintain the integrity of the original web content while enhancing its usability.
+* **Non-Intrusive:** Maintain the integrity of the original web content while enhancing usability.
 
-By using insertion points, developers and users can create impactful changes that blend naturally into the web experience.
+By leveraging **Insertion Points**, developers and users can introduce impactful changes that feel native to the browsing experience.
+
+***
 
 ## Widgets
 
-Widgets are modular, self-contained units of functionality that can be added to web pages. From displaying real-time data to introducing interactive tools, widgets provide users with the ability to extend the capabilities of any website.
+**Widgets** are modular, self-contained units of functionality added to web pages. From displaying **real-time data** to introducing **interactive tools**, widgets extend the capabilities of any website.
 
-Examples of Widgets:
+**Examples of Widgets:**
 
-* **Content Enhancers**: Add translations, summaries, or annotations to web pages.
+* **Content Enhancers:** Add translations, summaries, or annotations.
 
-* **Interactive Tools**: Embed calculators, polls, or form-fillers.
+* **Interactive Tools:** Embed calculators, polls, or form-fillers.
 
-* **Visual Overlays**: Customize themes or layouts with new design elements.
+* **Visual Overlays:** Customize themes or layouts with new design elements.
 
-Widgets empower users to personalize their online experience while offering developers an opportunity to innovate within an open ecosystem.
+Widgets empower users to personalize their online experience while offering developers an open platform for innovation.
 
-The `WidgetProps` interface serves as a contract for the properties and methods that a widget must implement to interact effectively with the BOS component and the platform. This documentation outlines the structure and functionality of the `WidgetProps` interface.
+### WidgetProps Interface
+
+The `WidgetProps` interface serves as a contract for the properties and methods a widget must implement to interact effectively with the BOS component and platform.
 
 ```javascript
 interface WidgetProps {
   context: TransferableContext;
   link?: {
-    id: UserLinkId; // Static link ID can also be here
+    id: UserLinkId; 
     authorId: string;
   };
   notify: (modalProps: ModalProps) => void;
@@ -66,95 +70,63 @@ interface WidgetProps {
 }
 ```
 
-<Accordion title="Properties" defaultOpen={false}>
-  `context: TransferableContext` Represents the current context in which the widget is operating. It is an instance of `TransferableContext`, allowing the widget to access relevant data and functionality within its operational scope.
+<Accordion title="WidgetProps Explained" defaultOpen={false}>
+  \- `context:` Represents the operational scope of the widget.
 
-  `link:` An optional object containing link information.
+  \- `ink:` Contains optional metadata for linking operations, including `id` and `authorId`.&#x20;
 
-  `id:` A static link ID, represented as UserLinkId.
+  \- `notify:` Triggers modals or notifications with specified properties.&#x20;
 
-  `authorId:` The ID of the author associated with the link.
+  \- `query:` Performs targeted queries, returning context data.&#x20;
 
-  `notify:` A function used to trigger notifications or modals within the platform. It takes `modalProps` as a parameter, which contains properties for the modal to be displayed.
+  \- `linkDb:` Provides \`get\` and \`set\` methods for managing data connections.&#x20;
 
-  `query:` A function that allows the widget to perform queries against the specified target. It returns a `TransferableContext` or null if the query fails.
+  \- `commitDocument:` Commits a document with specified metadata and context.&#x20;
 
-  `linkDb: `An object containing methods for interacting with the link database.
-
-  `get:`  `Parameters:`  `ctx: TransferableContext:` The current context.
-
-  `accountIds?: `	`string[] | string:` An optional parameter to specify account IDs.
-
-  `indexRules?:`	`LinkIndexRules:` An optional parameter for indexing rules.&#x20;
-
-  `Returns:` A promise that resolves to `LinkedDataByAccountDto`, containing linked data by account.
-
-  `set: Parameters:` `ctx: TransferableContext:` The current context.
-
-  `dataByAccount:` `LinkedDataByAccountDto:` The data to be set.
-
-  `indexRules: LinkIndexRules:` The indexing rules to apply.
-
-  `Returns:` A promise that resolves when the data has been set.
-
-  `commitDocument:`	A function to commit a document to the platform.
-  Parameters: `appDocId:` `DocumentId:` The ID of the document to commit.
-
-  `appDocMeta:` `DocumentMetadata:` Metadata associated with the document.
-
-  `ctx:` `TransferableContext:` The current context.
-
-  `dataByAccount:` `LinkedDataByAccountDto:` The linked data to associate with the document.
-
-  `Returns:` A promise that resolves when the document has been committed.
-
-  `getDocument:`	A function that retrieves the current document associated with the widget. It returns a promise that resolves to a `DocumentDto` or `null` if no document is found.
-
-  **Conclusion**
-
-  The `WidgetProps` interface plays a crucial role in facilitating the interaction between the BOS component and the platform. By defining a clear structure for the properties and methods, it ensures that widgets can efficiently manage context, links, notifications, and document interactions.
-
-  For further information or examples of usage, please refer to the relevant sections in the documentation or contact the development team.
+  \- `getDocument:` Retrieves the current document associated with the widget.
 </Accordion>
+
+These capabilities ensure efficient context management, document interactions, and seamless data operations.
 
 ## Controllers
 
-Controllers act as the bridge between widgets and the underlying web content. They manage how widgets interact with the page and ensure that modifications align with user preferences.
+**Controllers** serve as the bridge between **Widgets** and the web page content. They manage widget behavior, ensuring alignment with user preferences and consistent interactions across platforms.
 
-Key Functions:
+**Key Functions:**
 
-* **Orchestration**: Coordinate the behavior of multiple widgets to create a cohesive experience.
+* **Orchestration:** Coordinate multiple widgets for cohesive functionality.
 
-* **Customization**: Allow users to fine-tune widget settings and interactions.
+* **Customization:** Fine-tune widget settings and interactions.
 
-* **Consistency**: Ensure a smooth and reliable experience across different websites.
+* **Consistency:** Guarantee a smooth user experience across different websites.
 
-Controllers simplify the process of managing complex web interactions, making advanced customization accessible to everyone.
+Controllers simplify complex interactions, making advanced customization user-friendly and reliable.
 
 ## Applications
 
-Applications in the Mutable Web are collections of widgets and controllers designed to work in harmony. They provide a comprehensive set of tools and functionalities tailored to specific use cases or user needs.
+**Applications** in the Mutable Web are collections of **Widgets** and **Controllers** designed to operate cohesively. They address specific use cases or workflows, offering end-to-end solutions.
 
-Examples of Applications:
+**Examples of Applications:**
 
-* **Productivity Suites**: Integrate task management, note-taking, and calendar tools into your favorite platforms.
+* **Productivity Suites:** Integrate tools for task management, note-taking, and calendars.
 
-* **E-Commerce Enhancements**: Add price comparison, coupon finders, or product reviews directly to online shopping pages.
+* **E-Commerce Enhancements:** Add price comparisons, coupon finders, and product reviews.
 
-* **Accessibility Solutions**: Implement tools for screen readers, high-contrast modes, or text resizing.
+* **Accessibility Solutions:** Provide screen readers, high-contrast modes, and text resizing tools.
 
-Applications offer an end-to-end solution for creating highly customized and feature-rich web experiences.
+Applications unlock highly tailored and feature-rich browsing experiences, catering to both general users and niche markets.
 
-## Why these components matter
+## Why These Components Matter
 
-The interplay of insertion points, widgets, controllers, and applications creates a powerful ecosystem that:
+The synergy of **Insertion Points**, **Widgets**, **Controllers**, and **Applications** forms the foundation of the Mutable Web, enabling:
 
-* **Empowers Users**: Take control of your web experience with tools and features that match your needs.
+* **User Empowerment:** Individuals can control and personalize their browsing experience.
 
-* **Inspires Developers**: Build innovative solutions that integrate seamlessly with any website.
+* **Developer Innovation:** Build and share dynamic tools that seamlessly integrate into any website.
 
-* **Drives Collaboration**: Foster a community-driven approach to web customization and improvement.
+* **Collaborative Growth:** Foster a community-driven approach to web customization and improvement.
 
-These components are the foundation of the Mutable Web’s mission to transform the internet into a dynamic, adaptive, and user-first environment.
+<Tip>These components are more than technical tools—they represent a fundamental shift in how we perceive and interact with digital spaces.</Tip>
+The Mutable Web is not just a collection of components—it's a new way of thinking about the internet. By understanding and leveraging these building blocks, you can unlock limitless opportunities for customization, innovation, and collaboration.
 
-The Mutable Web is more than a set of tools—it’s a new way to experience the internet. By understanding and leveraging its key components, you can unlock endless possibilities for customization, innovation, and collaboration.
+**Let’s shape the future of the internet together.**
