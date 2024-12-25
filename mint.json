@@ -15,11 +15,6 @@
       "to": "#384BFF"
     }
   },
-{
-  "feedback": {
-    "thumbsRating": true
-  }
-},
   "topbarLinks": [
     {
       "name": "Support",
@@ -126,5 +121,8 @@
     "x": "https://x.com/dapplets_org",
     "github": "https://github.com/dapplets",
     "telegram": "https://t.me/dapplets"
+  },
+  "feedback": {
+    "thumbsRating": true
   }
 }
