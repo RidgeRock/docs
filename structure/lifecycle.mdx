@@ -47,8 +47,6 @@ The **Publish** button dynamically adapts based on the object’s origin and sta
 <Accordion title="Example of Forking" defaultOpen={false}>
   `Forking a Foreign Mutation:` Fork another author’s mutation, make adjustments, and publish it independently.&#x20;
 
-
-
   `Forking Your Own Mutation:` Fork your mutation to branch into separate versions (e.g., testing vs. production).
 </Accordion>
 
@@ -69,3 +67,71 @@ Integrated into the **Publish** action, the **Pull Request** mechanism allows us
 * This facilitates **collaboration** and **iterative improvements**.
 
 This structured workflow ensures **systematic interaction management**, fostering a collaborative and user-centric environment.
+
+## Special Cases in the LifeCycle
+
+### **Editing Your Own Mutation Without an Origin**
+
+When editing a mutation **without an origin** (not forked from another mutation):
+
+* Changes are treated as **updates**.
+
+* No local copy is created.
+
+* The **ID remains unchanged**.
+
+### **Editing a Mutation with an Origin (Foreign Author)**
+
+When editing a **forked mutation** based on another author’s work:
+
+* Changes remain **local** until published.
+
+* **Origin metadata** is preserved.
+
+* A **`Publish as Fork`** operation is required to maintain the mutation's history.
+
+### **Publishing a Fork**
+
+When publishing a fork:
+
+* The **original mutation remains unaltered**.
+
+* The forked version receives a **unique ID**.
+
+* Forks can be further **edited, published, or forked again**.
+
+## Fork and Edit Lifecycle
+
+Each mutation follows a lifecycle based on its origin and editing context:
+
+<Steps>
+  <Step title="Forking Someone Else’s Mutation">
+    Create a new branch from an existing mutation for independent development.
+  </Step>
+
+  <Step title="Forking Your Own Mutation">
+    Branch out versions of your mutation for different use cases (e.g., production vs. testing).
+  </Step>
+
+  <Step title="Creating a Mutation from Scratch">
+    Start fresh with a new mutation, generating a unique ID upon publication.
+  </Step>
+
+  <Step title="Editing Your Own Mutation (No Origin)">
+    Directly update your original mutation without creating a separate fork.
+  </Step>
+
+  <Step title="Editing Your Own Mutation (With Origin)">
+    Modify a forked mutation, maintaining origin metadata for clarity and traceability.
+  </Step>
+</Steps>
+
+This systematic approach ensures clarity and consistency across different mutation workflows.
+
+<Tip>
+  The **Mutable Web Lifecycle** provides a robust structure for managing changes, fostering collaboration, and ensuring adaptability across diverse use cases.
+</Tip>
+
+Whether you’re an **end-user**, **developer**, or **community contributor**, understanding and following these workflows is key to building an efficient, decentralized, and adaptive internet.
+
+**Let’s create, share, and innovate—together.**
