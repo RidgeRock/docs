@@ -15,6 +15,7 @@
       "to": "#384BFF"
     }
   },
+  "feedback.thumbsRating": true,
   "topbarLinks": [
     {
       "name": "Support",
