@@ -1,0 +1,45 @@
+---
+title: "getConnectedAccountsNet"
+description: "Use the function to get Connected Accounts list."
+---
+
+**getConnectedAccountsNet** is a core function in our [**Connected Accounts**](https://dapplets.mintlify.app/products/ca) system. By fetching a user’s linked identities—spanning NEAR (Testnet/Mainnet), Ethereum, Twitter, and GitHub—it empowers developers to unify multiple accounts into a single, verifiable network. This capability fuels seamless onboarding, improved trust, and a streamlined user experience across decentralized applications, driving adoption and positioning our platform as a foundational layer in Web3 identity management.
+
+## Example of use in NEAR Components
+
+```javascript
+const { getConnectedAccountsNet } = props
+
+getConnectedAccountsNet(accountId, 'near/testnet').then((data) =>
+	console.log(`Connected Accounts for ${accountId}:`, data)
+)
+```
+
+## Parameters
+
+| **Parameter** | Type                                                                      | **Description** |
+| ------------- | ------------------------------------------------------------------------- | --------------- |
+| `accountId`   | `string`                                                                  | Account ID      |
+| `origin`      | `"near/testnet"`, `"near/mainnet"`, `"ethereum"`, `"twitter"`, `"github"` | Account Origin  |
+
+## Returns
+
+| **Type**                    | **Description**         |
+| --------------------------- | ----------------------- |
+| `Promise<string[] \| null>` | Connected Accounts list |
+
+### Return example
+
+```javascript
+const result = [
+	'dapplets.testnet/near/testnet',
+	'MrConCreator/twitter',
+	'bos.dapplets.testnet/near/testnet',
+	'dapplets/github',
+	'0x123454f321c2880f3b9a06b2aabc1b5080420fa7/ethereum',
+	'0xf64849376812667bda7d902666229f8b8dd90687/ethereum',
+	'dapplets-team.testnet/near/testnet',
+]
+```
+
+By harnessing **getConnectedAccountsNet**, you eliminate fragmentation across blockchain ecosystems and social networks, allowing users to interact with decentralized applications under a single, streamlined profile. This unified approach to Web3 identity helps drive user acquisition and engagement, showcasing a scalable, user-centric infrastructure designed for the next generation of decentralized applications.

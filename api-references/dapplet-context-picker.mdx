@@ -4,8 +4,6 @@ description: "DappletContextPicker is a component that enables context picking m
 mode: "wide"
 ---
 
-## Demos
-
 <Tip>
   For examples and details on the usage of this React components, visit the [feature demo page](https://dapplets.mintlify.app/products/picker-tool).
 </Tip>
@@ -21,7 +19,7 @@ You don't need to import the component. It's available in the NEAR Components th
 | Name                 | Type                                                                                                                                 | Optional | Description                                                                                                                                                                         |
 | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------ | -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **`target`**         | [`Target`](https://dapplets.mintlify.app/api-references/target) or [`Target[]`](https://dapplets.mintlify.app/api-references/target) | ✔️       | The set of target contexts that will be highlighted and available for selection. By default, all contexts on the page provided by the available adapters will be active for Picker. |
-| **`onClick`**        | `(ctx: `[`TransferableContext`](https://dapplets.mintlify.app/api-references/transferable-context)`) => void`                             | ✔️       | A callback that will be called when the context is clicked.                                                                                                                         |
-| **`LatchComponent`** | `React.FC<`[`LatchProps`](https://dapplets.mintlify.app/api-references/latch-props)`>`                                                    | ✔️       | Adding a Latch component. Contexts with Latch become interactive. `onClick` is called when the Latch is clicked.                                                                    |
+| **`onClick`**        | `(ctx: `[`TransferableContext`](https://dapplets.mintlify.app/api-references/transferable-context)`) => void`                        | ✔️       | A callback that will be called when the context is clicked.                                                                                                                         |
+| **`LatchComponent`** | `React.FC<`[`LatchProps`](https://dapplets.mintlify.app/api-references/latch-props)`>`                                               | ✔️       | Adding a Latch component. Contexts with Latch become interactive. `onClick` is called when the Latch is clicked.                                                                    |
 
 ##
