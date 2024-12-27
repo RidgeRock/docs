@@ -102,6 +102,7 @@
       "group": "API REFERENCES",
       "pages": [
         "api-references/dapplet-context-picker",
+        "api-references/get-ca-net",
         "api-references/highlighter",
         "api-references/injectable-target",
         "api-references/latch-props",
